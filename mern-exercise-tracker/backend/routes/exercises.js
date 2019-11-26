@@ -2,7 +2,6 @@ const router = require('express').Router();
 let Exercise = require('../models/exercise.model');
 
 var mongoose = require('mongoose');
-var ObjectId = mongoose.Types.ObjectId;
 
 router.route('/').get((req, res) => {
   Exercise.find()
