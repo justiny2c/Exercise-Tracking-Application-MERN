@@ -1,13 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-export class ExerciseList extends React.Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+class ExerciseList extends React.Component {
+  render() {
+    return <div>{/* <h1>Exercise List</h1> */}</div>;
+  }
 }
 
-export default ExerciseList
+export default ExerciseList;
