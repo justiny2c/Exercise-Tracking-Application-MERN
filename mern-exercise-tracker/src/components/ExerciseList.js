@@ -3,6 +3,9 @@ import React from 'react';
 import axios from 'axios';
 
 import Exercise from './Exercise.js';
+import Footer from './Footer.js';
+
+import '../App.css';
 
 class ExerciseList extends React.Component {
   state = {
@@ -44,7 +47,7 @@ class ExerciseList extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className='exercise-main'>
         <h3>Exercises</h3>
         <table className='table'>
           <thead className='thead-light'>
@@ -56,6 +59,7 @@ class ExerciseList extends React.Component {
           </thead>
           <tbody>{this.exerciseList()}</tbody>
         </table>
+        <Footer />
       </div>
     );
   }
