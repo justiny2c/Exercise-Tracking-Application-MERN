@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import ExerciseList from './components/ExerciseList.js';
 import EditExercise from './components/EditExercise.js';
 import CreateExercise from './components/CreateExercise.js';
@@ -19,6 +20,7 @@ function App() {
       <Route path='/edit/:id' component={EditExercise} />
       <Route path='/create' component={CreateExercise} />
       <Route path='/user' component={CreateUser} />
+      <Footer />
       <Router />
     </div>
   );
